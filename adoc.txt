@@ -1,0 +1,46 @@
+Time complexity and space complexity
+
+
+input tends to infinity  
+defining a limiting behaviour of the algorithm
+keeping a  limiting behaviour that algorithm will not be performing worse than this .whether your application will be able to sustain the users are not
+estimate the time ,for the future purpose .what if the users increase you should able to tell how much resources are needed
+to tell the the time complexity and spaces complexity is needed
+
+
+rules for time and space complexity:
+drop the insignificant terms (same set of variables)
+drop the constants
+
+O(1)<O(logn)<O(n)<O(nlogn)<O(n^2)<O(n^3)<O(2^n)<O(n^n)
+
+
+O bigO --defines upper bound
+big Omega -- defines the lower bound
+big Theta --- defines the average bound
+
+
+
+
+
+When you start solving the problem think like 
+what if we go from the left to right 
+what if we go from the right to left 
+
+
+
+when testing for test case take or includes
+add negatives 
+add doublecates
+add zero
+
+
+
+unordered sets or unordered maps will have O(1)
+
+when prime number related question is give try solving with the sieve algorithm
+when you have anything based on the order in the arrays try if you can solve with the bucketing technique
+
+SUBARRAYS
+all the subarrays count =(n*(n+1))/2
+starting index and the ending index
