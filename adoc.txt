@@ -44,3 +44,6 @@ when you have anything based on the order in the arrays try if you can solve wit
 SUBARRAYS
 all the subarrays count =(n*(n+1))/2
 starting index and the ending index
+
+
+
