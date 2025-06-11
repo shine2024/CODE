@@ -1,2 +1,2 @@
 # CODE
-Learn in How many ways you can Define a Array in <p  style="color:red">DataTypeArrays.java</p>
+## Learn how many ways you can define an array in `DataTypeArrays.java`
