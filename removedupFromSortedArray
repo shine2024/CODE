@@ -1,0 +1,48 @@
+🔹 8. Remove Duplicates (Sorted Array)
+
+Concept: Two pointers
+
+Input:
+arr = [1, 1, 2, 2, 3, 4, 4]
+
+Output:
+[1, 2, 3, 4]
+
+solution:
+// what I am trying to do is that one pointer will store the first value and with the next pointer I will check if the next is same
+
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("input the number of elements in the array");
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            System.out.println("input"+i+"element ");
+            a[i]=sc.nextInt();
+        }
+        System.out.println("the array is"+Arrays.toString(a));
+        //two pointer approch
+        
+        int l=a[0];
+        int r=a[1];
+        ArrayList<Integer> result=new ArrayList<>();
+        result.add(l);
+        for(int i=1;i<n;i++){
+            if(l==r){
+                r=a[i+1];
+            }else{
+                result.add(a[i]);
+                l=a[i];
+            }
+        }
+        
+        System.out.println(result);
+      
+        
+    }
+}
