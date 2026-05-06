@@ -1,0 +1,50 @@
+Question
+
+Given an array:
+
+int[] arr = {3, 5, 2, 8, 6, 1, 4};
+
+Using the prefix sum pattern, find the sum of elements between:
+
+index 1 to 4
+index 2 to 6
+index 0 to 3
+
+
+
+Answer:
+
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("the prefix sum");
+        System.out.println("input the number of elements the array contain");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            System.out.println("input the element"+i+"it is");
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("the required array "+Arrays.toString(arr));
+        //the prefix array is
+        int a[]=new int[n];
+        a[0]=arr[0];
+        for(int i=1;i<n;i++){
+            a[i]=a[i-1]+arr[i];
+        }
+        System.out.println("the prefix array is"+Arrays.toString(a));
+       int result= sum(1,3,a);
+       System.out.println(result);
+       int result1= sum(2,3,a);
+       System.out.println(result1);
+       int result2= sum(1,4,a);
+       System.out.println(result2);
+        
+    }
+    public static int sum(int a,int b,int arr[]){
+        return arr[b]-arr[a-1];
+        
+    }
+}
